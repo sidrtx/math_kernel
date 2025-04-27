@@ -1,0 +1,9 @@
+(venv) slayer@debian:~/dev/projectx/NaiveMKL$ ./blas1
+Dot Product Result: 2e+06
+Dot Product Time: 5 ms
+AXPY Time: 2 ms
+SCAL Time: 1 ms
+L2 Norm Result: 2000
+L2 Norm Time: 1 ms
+IAMAX Result: 0
+IAMAX Time: 2 ms
