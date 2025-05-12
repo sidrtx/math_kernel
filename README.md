@@ -1,10 +1,12 @@
 ### Prerequiste
+For Arch Linux: 
 
 ```bash
 sudo pacman -S clang openmp 
 ```
 
 ### Running Guide
+For Running Tests: (e.g. Benchmarking BLAS lvl 1)
 
 ```bash
 clang++ -std=c++17 -O2 -fopenmp -o out test/blas1.cpp 
@@ -14,26 +16,25 @@ clang++ -std=c++17 -O2 -fopenmp -o out test/blas1.cpp
 
 ```
 math_kernel/
-|
-├── include/                       # Public headers
-│   └── blas/
-│       ├── blas1.hpp              # Template function definitions
-│       ├── blas2.hpp
-│       └── blas3.hpp
 │
-├── src/
+├── include/                   # headers (template-based, public)
+│   ├── blas/
+│   │   ├── blas1.hpp
+│   │   ├── blas2.hpp
+│   │   └── blas3.hpp
+│   │
 │   ├── lapack/
-│   │   └── lapack.cpp            
+│   │   └── lapack.hpp
+│   │
 │   └── autodiff/
-│       ├── tensor.cpp
-│       ├── ops.cpp
-│       └── tape.cpp
+│       ├── tensor.hpp
+│       ├── ops.hpp
+│       └── tape.hpp
 │
-├── tests/                         # Time profiling
+├── tests/                      # unit tests, benchmarking
 │   ├── blas1.cpp
 │   ├── blas2.cpp
-│   ├── blas3.cpp
+│   ├── lapack.cpp
+│   ├── autodiff.cpp
 │   └── benchmark_results.txt
-
-
 ```
