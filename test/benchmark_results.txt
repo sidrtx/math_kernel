@@ -1,0 +1,20 @@
+BLAS1 Results:
+Dot Product Result: 2e+06
+Dot Product Time: 4 ms
+AXPY Time: 1 ms
+SCAL Time: 0 ms
+L2 Norm Result: 2000
+L2 Norm Time: 1 ms
+IAMAX Result: 0
+IAMAX Time: 1 ms
+
+BLAS2 Results:
+GEMV Time: 3 ms
+SYMV Time: 1 ms
+TRMV Time: 6 ms
+
+BLAS3 Results:
+GEMM Time: 444 ms
+TRSM Time: 624 ms
+TRMM Time: 558 ms
+SYMM Time: 1380 ms
